@@ -452,11 +452,10 @@ void initRender(OpenGL* ogl)
 
 	 //так как гит игнорит модели *.obj файлы, так как они совпадают по расширению с объектными файлами, 
 	 // создающимис€ во врем€ компил€ции, € переименовал модели в *.obj_m
-	loadModel("models\\8.obj", &objModel);
+	loadModel("models\\8.obj_m", &objModel);
 
-	loadModel("models\\12.obj", &T);
 	glActiveTexture(GL_TEXTURE0);
-	loadModel("models\\6.obj", &monkey);
+	loadModel("models\\6.obj_m", &monkey);
 	monkeyTex.loadTextureFromFile("textures//7.bmp");
 	monkeyTex.bindTexture();
 	glActiveTexture(GL_TEXTURE0);
